@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   body.style.textAlign = "center";
 
   const _answer = Math.floor(Math.random() * 100) + 1;
+  console.log(_answer); // Used to check for the correct answer functionality of the app
 
   const table = document.createElement("table");
   body.appendChild(table);
@@ -51,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Function to start the game
   function gameOn() {
     let attemptsLeft = numTries;
-    console.log(_answer);
 
     function makeGuess() {
       if (attemptsLeft > 0) {
